@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "body-parser": "latest",
+    "compression": "latest",
+    "cookie-parser": "latest",
+    "dateformat": "~1.0.7-1.2.3",
+    "errorhandler": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "http-post": "~0.1.1",
+    "memory-cache": "0.0.5",
+    "method-override": "latest",
+    "morgan": "latest",
+    "mstring": "^0.1.2",
+    "multer": "^0.1.0",
+    "serve-favicon": "latest",
+    "string": "~1.8.0",
+    "underscore": "latest",
+    "validator": "^3.19.1",
+	"phantom": "latest"
+  },
+  "name": "MuraMana",
+  "subdomain": "MuraMana",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.8.x"
+  }
+}
