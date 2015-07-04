@@ -37,10 +37,11 @@ module.exports = function(app) {
 	var urlTraveloka = 'http://www.traveloka.com/fullsearch?ap=CGK.DPS&dt=01-07-2015.NA&ps=1.0.0';
 	var urlNusatrip = 'http://www.nusatrip.com/flights/search?departure=CGK&arrival=DPS&departDate=20150701&adultNum=1&childNum=0&infantNum=0';
 	//url = 'https://m.traveloka.com/flight/search/origin/single.CGK.DPS.2015-6-26.null.1.0.0/null/null';
-	var flightsNusaTrip = [];
-	var flightsTraveloka = [];
+	
 	var i = 0;
 	app.get('/getflight', function(req, res){console.log("?");
+		var flightsNusaTrip = [];
+		var flightsTraveloka = [];
 		urlTraveloka = 'http://www.traveloka.com/fullsearch?ap=' + req.query.origin + '.' + req.query.destination + 
 			'&dt=' + formatDateTraveloka(req.query.departuredate) + '.NA&ps=1.0.0';
 		
